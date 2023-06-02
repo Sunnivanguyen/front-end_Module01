@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 01 - HTML Basic</title>
+    <style>
+      button {
+        background-color: rgb(207, 29, 26);
+        border-radius: 10px;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- To create a comment you click "Ctrl + / " -->
+    <!-- To open a terminal you click "Ctrl + ` "  -->
+    <!-- To undo once step you click "Ctrl + z " -->
+    <!-- To redo once step you click "Ctrl + y " -->
+    <!-- Tạo header -->
+    <header><h1>Học session 02 - HTML ngày 02.06.2023</h1></header>
+    <!-- Nội dung -->
+    <section>
+      <nav>
+        <h2>Homework</h2>
+        <ul
+          style="
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-between;
+            margin: 20px;
+            width: fit-content;
+          "
+        >
+          <li>
+            <a href="./Home/assignment_01.html" target="_blank"
+              ><button>Assignment 01</button></a
+            >
+          </li>
+          <li>
+            <a href="./Home/assignment_02.html" target="_blank"
+              ><button>Assignment 02</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section>
+      <nav>
+        <h2>Class Assignment</h2>
+        <ul
+          style="
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-between;
+            margin: 20px;
+            width: fit-content;
+          "
+        >
+          <li>
+            <a href="./Class/assignment_01.html" target="_blank"
+              ><button>Assignment 01</button></a
+            >
+          </li>
+          <li>
+            <a href="./Class/assignment_02.html" target="_blank"
+              ><button>Assignment 02</button></a
+            >
+          </li>
+          <li>
+            <a href="./Class/assignment_03.html" target="_blank"
+              ><button>Assignment 03</button></a
+            >
+          </li>
+          <li>
+            <a href="./Class/assignment_04.html" target="_blank"
+              ><button>Assignment 04</button></a
+            >
+          </li>
+          <li>
+            <a href="./Class/assignment_05.html" target="_blank"
+              ><button>Assignment 05</button></a
+            >
+          </li>
+          <li>
+            <a href="./Class/assignment_06.html" target="_blank"
+              ><button>Assignment 06</button></a
+            >
+          </li>
+          <li>
+            <a href="./Class/assignment_07.html" target="_blank"
+              ><button>Assignment 07</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <main>
+      <!-- Thẻ phân nội dung chính có tiêu đề -->
+      <section>
+        <h3>Làm quen với thẻ heading</h3>
+        <h1>Thẻ heading h1</h1>
+        <h2>Thẻ heading h2</h2>
+        <h3>Thẻ heading h3</h3>
+        <h4>Thẻ heading h4</h4>
+        <h5>Thẻ heading h5</h5>
+        <h6>Thẻ heading h6</h6>
+      </section>
+
+      <section>
+        <h3>Làm quen với thẻ paragraph</h3>
+        <p>Hello Rikkei Academy</p>
+      </section>
+
+      <section>
+        <h3>Làm quen với thẻ danh sách</h3>
+        <h4>Danh sách có sắp xếp</h4>
+        <ol type="a">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ol>
+
+        <h4>Danh sách không sắp xếp</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <!-- Ctrl + / -> phím tắt của comment -->
+      <section>
+        <h3>Làm quen với thẻ summary</h3>
+        <details>
+          <!-- Tiêu đề của đoạn văn tóm tắt -->
+          <summary>HTML</summary>
+          <p>
+            HTML là HyperText Makup Languages - Ngôn ngữ đánh dấu siêu văn bản
+          </p>
+        </details>
+      </section>
+
+      <!-- Làm quen một số thẻ inline -->
+      <section>
+        <h3>Làm quen với thẻ a</h3>
+        <p>Thẻ a là thẻ link kết - bắt buộc có thuộc tính href</p>
+        <a href="https://zingnews.vn/">Zing News</a>
+        <br />
+        <!-- Dùng target='_blank' để khi click vào thẻ -> mở một tab mới -->
+        <a href="https://zingnews.vn/" target="_blank"
+          >Zing News sang tab mới</a
+        >
+
+        <a href="./html/about.html" target="_blank">About</a>
+      </section>
+    </main>
+  </body>
+</html>

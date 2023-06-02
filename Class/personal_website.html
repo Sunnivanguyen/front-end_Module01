@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 01 - My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      h1 {
+        margin-right: 40px;
+        margin-left: 10px;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+      }
+      li {
+        float: left;
+      }
+      main {
+        position: relative;
+        top: 100px;
+        z-index: 1;
+      }
+      section {
+        box-sizing: border-box;
+        border: none;
+        height: 630px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 200px 50px;
+      }
+      .about-me {
+        background-image: url("../Images/pexels-steve-johnson-1509534.jpg");
+        background-size: cover;
+        opacity: 80%;
+      }
+      .my-music {
+        background-image: url("../Images/pexels-moose-photos-1037992.jpg");
+        background-size: cover;
+      }
+      .my-videos {
+        background-image: url("../Images/pexels-pixabay-262713.jpg");
+        background-size: cover;
+      }
+      .my-profile {
+        background-image: url("../Images/pexels-alena-koval-961402.jpg");
+        background-size: cover;
+      }
+      h2 a {
+        font-size: 50px;
+      }
+      h2 {
+        font-family: "Dancing Script", cursive;
+        font-weight: 600;
+      }
+      .my-contact {
+        box-sizing: border-box;
+        border: none;
+        height: 600px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+      .my-contact h2 {
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        font-weight: 600;
+        font-size: 50px;
+        left: 40px;
+      }
+      iframe {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      style="
+        position: fixed;
+        border-bottom: solid 1px black;
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: rgb(153, 62, 239);
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <nav>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            box-sizing: border-box;
+            margin: 10px 20px;
+          "
+        >
+          <div
+            id="logo"
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              box-sizing: border-box;
+              width: 200px;
+              font-family: 'Dancing Script', cursive;
+              font-weight: 700;
+            "
+          >
+            <img
+              src="../Icons/505a15ddc7c227b3f646c1d069c4bea5.jpg"
+              alt="web-logo"
+              height="45px"
+              width="45px"
+              style="border-radius: 50%"
+            />
+            <h1>SUNNIVA</h1>
+          </div>
+
+          <ul
+            style="
+              list-style-type: none;
+              text-align: center;
+              overflow: hidden;
+              width: 500px;
+              display: flex;
+              flex-direction: row;
+              margin-right: 20px;
+              margin-left: 400px;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0;
+            "
+          >
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#music">Music</a>
+            </li>
+            <li>
+              <a href="#videos">Videos</a>
+            </li>
+            <li>
+              <a href="#profile">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="about" class="about-me">
+        <h2><a href="./about.html">About me</a></h2>
+      </section>
+      <section id="music" class="my-music">
+        <h2><a href="./music.html">My Favorite Song List</a></h2>
+      </section>
+      <section id="videos" class="my-videos">
+        <h2><a href="./video.html">My Favorite Video List</a></h2>
+      </section>
+      <section id="profile" class="my-profile">
+        <h2><a href="./resume.html">My Profile</a></h2>
+      </section>
+      <section id="contact" class="my-contact">
+        <h2>My Contact</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15338.136866087201!2d108.20317444362813!3d16.03774467532226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421993058c6045%3A0x4dbbb9ccec61fee3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOZ2_huqFpIG5n4buvIC0gxJDhuqFpIGjhu41jIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1685681023312!5m2!1svi!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+  </body>
+</html>

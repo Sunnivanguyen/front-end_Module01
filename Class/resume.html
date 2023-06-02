@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Assignment 02</title>
+    <style>
+      main {
+        position: relative;
+        top: 100px;
+        z-index: 1;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+      }
+      li p {
+        display: inline-block;
+        padding-right: 40px;
+        font-weight: 600;
+        font-family: "Dancing Script", cursive;
+        font-size: 40px;
+        width: 300px;
+      }
+      p,
+      h1 {
+        font-weight: 600;
+        font-family: "Dancing Script", cursive;
+        font-size: 20px;
+      }
+      h1 {
+        margin-right: 40px;
+        margin-left: 10px;
+        font-size: 24px;
+      }
+      li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+      }
+      h2 {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      style="
+        position: fixed;
+        border-bottom: solid 1px black;
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: rgb(153, 62, 239);
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <nav>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            box-sizing: border-box;
+            margin: 10px 20px;
+          "
+        >
+          <div
+            id="logo"
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              box-sizing: border-box;
+              width: 200px;
+              font-family: 'Dancing Script', cursive;
+              font-weight: 700;
+            "
+          >
+            <a href="../Class/personal_website.html">
+              <img
+                src="../Icons/505a15ddc7c227b3f646c1d069c4bea5.jpg"
+                alt="web-logo"
+                height="45px"
+                width="45px"
+                style="border-radius: 50%"
+              />
+            </a>
+            <h1>SUNNIVA</h1>
+          </div>
+
+          <ul
+            style="
+              list-style-type: none;
+              text-align: center;
+              overflow: hidden;
+              width: 500px;
+              display: flex;
+              flex-direction: row;
+              margin-right: 20px;
+              margin-left: 400px;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0;
+            "
+          >
+            <li>
+              <a href="../Class/about.html">About</a>
+            </li>
+            <li>
+              <a href="../Class/music.html">Music</a>
+            </li>
+            <li>
+              <a href="../Class/video.html">Videos</a>
+            </li>
+            <li>
+              <a href="../Class/resume.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main style="position: absolute; z-index: 1; top: 100px">
+      <div style="display: grid; grid-template-columns: 1fr 1fr">
+        <div id="half-left">
+          <section id="intro">
+            <div id="personal_image" style="text-align: center">
+              <img
+                height="310px"
+                width="260px"
+                src="../Images/z4126271231523_aa8f563e012367a676582e8e709340e2.jpg"
+                alt="CV Image"
+              />
+              <h2>Nguyễn Thị Mỹ Hạnh</h2>
+              <h2>FullStack Developer</h2>
+            </div>
+            <hr style="width: 90%; text-align: left; margin-left: 0" />
+          </section>
+          <section id="education">
+            <div>
+              <h2 class="section-header">Education</h2>
+              <h3>DANANG UNIVERSITY OF FOREIGN LANGUAGE STUDIES</h3>
+              <h4>
+                <i>BACHELOR OF ENGLISH LANGUAGE</i>
+              </h4>
+            </div>
+            <hr style="width: 90%; text-align: left; margin-left: 0" />
+          </section>
+          <section id="certificate">
+            <div>
+              <h2 class="section-header"><b>Certificate</b></h2>
+              <ul>
+                <li><h4>IELTS 7.0</h4></li>
+                <li><h4>HSK 4</h4></li>
+                <li>
+                  <h4><a href="#">REACT ADVANCED</a></h4>
+                </li>
+              </ul>
+            </div>
+            <hr style="width: 90%; text-align: left; margin-left: 0" />
+          </section>
+          <section id="personal-skills">
+            <h2 class="section-header">Personal Skill</h2>
+            <div id="measure-skill-bar">
+              <div class="measure">
+                <label for="english"><h4>ENGLISH</h4></label>
+                <meter
+                  id="english"
+                  min="0"
+                  max="100"
+                  low="33"
+                  high="66"
+                  optimum="200"
+                  value="75"
+                >
+                  at 75/100
+                </meter>
+              </div>
+              <div class="measure">
+                <label for="chinese"><h4>CHINESE</h4></label>
+                <meter
+                  id="chinese"
+                  min="0"
+                  max="100"
+                  low="33"
+                  high="44"
+                  optimum="300"
+                  value="50"
+                >
+                  at 50/100
+                </meter>
+              </div>
+
+              <div class="measure">
+                <label for="willingness"><h4>WILLINGNESS TO LEARN</h4></label>
+                <meter
+                  id="willingness"
+                  min="0"
+                  max="100"
+                  low="33"
+                  high="66"
+                  optimum="200"
+                  value="90"
+                >
+                  at 90/100
+                </meter>
+              </div>
+
+              <div class="measure">
+                <label for="time_management"><h4>TIME MANAGEMENT</h4></label>
+                <meter
+                  id="time_management"
+                  min="0"
+                  max="100"
+                  low="33"
+                  high="66"
+                  optimum="200"
+                  value="80"
+                >
+                  at 80/100
+                </meter>
+              </div>
+
+              <div class="measure">
+                <label for="self_learning"><h4>SELF-LEARNING</h4></label>
+                <meter
+                  id="self_learning"
+                  min="0"
+                  max="100"
+                  low="33"
+                  high="66"
+                  optimum="200"
+                  value="90"
+                >
+                  at 90/100
+                </meter>
+              </div>
+            </div>
+            <hr style="width: 90%; text-align: left; margin-left: 0" />
+          </section>
+        </div>
+        <div id="half-right">
+          <section id="personal_info">
+            <div>
+              <h2>Personal Info</h2>
+              <h2>
+                I am a 26-year old goal-oriented person who is eager to learn.
+                One of my strengths is using English fluently, which is
+                beneficial to my work and learning process, so I can learn from
+                various English reliable sources. I have learnt the basic HTML,
+                CSS, JavaScript and ReactJS Courses on Udemy and Scrimba.
+              </h2>
+            </div>
+            <hr style="width: 90%; text-align: left; margin-left: 0" />
+          </section>
+
+          <section id="work-experience">
+            <h2 class="section-header">Work Experiences</h2>
+            <div id="first-job">
+              <h3>SELLER AT DAI VIET CO INVESTMENT JOINT STOCK COMPANY</h3>
+              <ul>
+                <li>
+                  <h4><i>ENGLISH COMMUNICATION SKILLS</i></h4>
+                </li>
+                <li>
+                  <h4><i>CHINESE COMMUNICATION SKILLS</i></h4>
+                </li>
+              </ul>
+            </div>
+            <div id="second-job">
+              <h3>ENGLISH TUTOR</h3>
+              <ul>
+                <li>
+                  <h4><i>INDEPENDENCE</i></h4>
+                </li>
+                <li>
+                  <h4><i>PATIENCE</i></h4>
+                </li>
+              </ul>
+            </div>
+            <div id="third-job">
+              <h3>GRAPHIC EDITING COLLABORATOR AT FPT SOFTWARE</h3>
+              <ul>
+                <li>
+                  <h4><i>COLLABORATIVE TEAMWORK SKILLS</i></h4>
+                </li>
+                <li>
+                  <h4><i>SELF-LEARNING SKILLS</i></h4>
+                </li>
+              </ul>
+            </div>
+            <hr style="width: 90%; text-align: left; margin-left: 0" />
+          </section>
+
+          <section id="personal-project">
+            <h2>Personal Project</h2>
+            <h3>SPACED REPETITION FLASHCARD</h3>
+            <nav
+              style="
+                display: grid;
+                grid-template-columns: 40px 1fr;
+                align-items: center;
+              "
+            >
+              <div style="display: inline-block; width: 10%">
+                <i class="fa fa-github lg"></i>
+              </div>
+              <div style="display: inline-block; width: 80%">
+                <h3>
+                  <a
+                    href="https://github.com/Sunnivanguyen/spaced-repetition_flashcard.git"
+                    >https://github.com/Sunnivanguyen/spaced-repetition_flashcard.git</a
+                  >
+                </h3>
+              </div>
+            </nav>
+
+            <h3>TECHNOLOGY</h3>
+            <ul>
+              <li>
+                <h4><i>HTML</i></h4>
+              </li>
+              <li>
+                <h4><i>CSS</i></h4>
+              </li>
+              <li>
+                <h4><i>JAVASCRIPT</i></h4>
+              </li>
+              <li>
+                <h4><i>REACT JS</i></h4>
+              </li>
+            </ul>
+            <hr style="width: 90%; text-align: left; margin-left: 0" />
+          </section>
+          <section id="contact">
+            <h2 class="section-header">Contact me</h2>
+            <div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 40px 1fr;
+                  align-items: center;
+                "
+              >
+                <div style="display: inline-block; width: 10%">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div style="display: inline-block; width: 88%">
+                  <h3>17 Phan Đình Thông, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng</h3>
+                </div>
+              </div>
+              <nav
+                style="
+                  display: grid;
+                  grid-template-columns: 40px 1fr;
+                  align-items: center;
+                "
+              >
+                <div style="display: inline-block; width: 10%">
+                  <i class="fa fa-envelope-open"></i>
+                </div>
+                <div style="display: inline-block; width: 88%">
+                  <a href="mailto:Sunnivanguyen@gmail.com"
+                    ><h3>Sunnivanguyen@gmail.com</h3></a
+                  >
+                </div>
+              </nav>
+              <nav
+                style="
+                  display: grid;
+                  grid-template-columns: 40px 1fr;
+                  align-items: center;
+                "
+              >
+                <div style="display: inline-block; width: 10%">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div style="display: inline-block; width: 88%">
+                  <a href="tel:0778877236"><h3>0778877236</h3></a>
+                </div>
+              </nav>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

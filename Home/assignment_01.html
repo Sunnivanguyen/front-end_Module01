@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 01</title>
+    <style>
+      header,
+      #main-content,
+      aside,
+      main,
+      footer {
+        border-style: solid;
+        border-color: black;
+        box-sizing: border-box;
+        padding: 10px 40px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+      }
+      aside,
+      main {
+        margin: 10px;
+        height: 400px;
+      }
+      header,
+      #main-content {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>This is Header</header>
+    <div
+      id="main-content"
+      style="
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        justify-content: space-between;
+      "
+    >
+      <aside>This is sidebar</aside>
+      <main>This is main content</main>
+    </div>
+    <footer>This is footer</footer>
+  </body>
+</html>
