@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paying Method</title>
+    <link rel="stylesheet" href="./payingmethod.css" />
+  </head>
+  <body>
+    <h1>Select Card</h1>
+
+    <div class="payment-cards-box">
+      <div class="card-logo">
+        <img
+          src="https://cdn0.erstegroup.com/content/sites/rs/ebs/www_erstebank_rs/en/Stanovnistvo/Kartice/Mastercard/_jcr_content/configuration/pageTeasers/default/image.fitIn.w1200.png/15385696194461486473327516.png"
+          alt="Picture: Mastercard"
+        />
+      </div>
+      <div class="card-logo">
+        <img
+          src="https://www.briflynews.com/sites/default/files/styles/fb_1200x630/public/article/2020-10/Paypal.png?itok=PWK8nPbV"
+          alt="Picture: Paypal Card"
+        />
+      </div>
+      <div class="card-logo">
+        <img
+          src="https://media.cdn.gradconnection.com/uploads/3074e338-f69a-489f-9e37-683a14469328-Visa-Logo.png"
+          alt="Picture: Visa Card"
+        />
+      </div>
+      <div class="card-logo">
+        <img
+          src="https://mma.prnewswire.com/media/697271/American_Express_Canada_American_Express_Rolls_out_New_Brand_Cam.jpg?p=facebook"
+          alt="Picture: American Express Card"
+        />
+      </div>
+      <div class="card-logo">
+        <img
+          src="https://thepennywisemama.com/wp-content/uploads/2013/12/Screen-shot-2013-12-22-at-10.49.17-PM.png"
+          alt="Picture: Discover Card"
+        />
+      </div>
+    </div>
+
+    <hr />
+    <form class="input-info">
+      <div>
+        <label for="card-number" class="card-number-label">Card Number</label>
+        <input type="text" id="card-number" />
+      </div>
+      <div class="extra-info">
+        <div>
+          <label for="date">Expiry Date</label>
+          <input type="date" id="date" />
+        </div>
+        <div>
+          <label for="cvc"> CVC/CVV </label>
+          <input type="password" id="cvc" />
+        </div>
+      </div>
+      <input type="submit" value="Save" id="save-btn" />
+    </form>
+  </body>
+</html>
