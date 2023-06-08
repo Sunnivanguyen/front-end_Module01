@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+:root {
+  --blue: #406ff5;
+}
+body {
+  background-color: #e4f2fd;
+  height: 100vh;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+.title-section {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  position: relative;
+  top: 20%;
+  left: 50px;
+  margin-left: 100px;
+  align-items: center;
+  height: 50%;
+}
+
+.decoration-bar {
+  height: 100%;
+  width: 15px;
+  border-radius: 25px;
+  background-color: var(--blue);
+}
+
+h1 {
+  color: var(--blue);
+  font-size: 100px;
+  width: 40%;
+  margin: 30px;
+  font-weight: 700;
+}
+span {
+  color: black;
+}
+.sidebar-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+.first-sidebar,
+.second-sidebar {
+  height: 80%;
+  background-color: white;
+  color: black;
+  width: 250px;
+  border-radius: 15px;
+  position: relative;
+  top: 10%;
+  left: 40px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sidebar-heading {
+  height: 15%;
+  margin: 20px auto;
+}
+.sidebar-main_content {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.sidebar-footer {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.flexbox-child {
+  display: grid;
+  width: 200px;
+  grid-template-columns: 40px 1fr;
+  height: 45px;
+  width: 90%;
+  align-items: center;
+  background-color: white;
+  transition: background-color color 0.15s;
+  border-radius: 10px;
+}
+.sidebar-main_content > .flexbox-child:hover,
+.sidebar-footer > .flexbox-child:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  color: white;
+}
+.sidebar-heading > h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.flexbox-child > h4 {
+  font-weight: 200;
+}
+.flexbox-child > i {
+  margin: auto;
+}
