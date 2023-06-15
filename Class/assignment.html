@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      legend {
+        background-color: #000;
+        color: #fff;
+        padding: 3px 6px;
+      }
+
+      input {
+        margin: 0.4rem;
+      }
+    </style>
+    <fieldset>
+      <legend>bai tap 1</legend>
+      <pre>
+            khai báo biến 
+            -first name có giá trị là :academy
+            _ last name có giá trị lf rikke 
+            _ fullname có gí trị là : rikke academy
+        </pre
+      >
+      <button onclick="bai_01()">bài 1</button>
+    </fieldset>
+    <!-- *-------------------------------------------------------- -->
+    <fieldset>
+      <legend>bai tap 3</legend>
+      <pre>
+            Viết chương trình nhập điểm của một sinh viên cho các môn: 
+            Vật lý, Hóa học, và Sinh học. Sau đó hiển thị tổng điểm và điểm trung bình 3 môn này.
+        </pre
+      >
+      <button onclick="bai_03()">bài 3</button>
+
+      <p id="result_03"></p>
+    </fieldset>
+
+    <!-- *----------------------------------------------------------- -->
+    <fieldset>
+      <legend>bai tap 4</legend>
+      <pre>
+            Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit).
+        </pre
+      >
+      <button onclick="bai_04()">bài 4</button>
+
+      <p id="result_04"></p>
+    </fieldset>
+
+    <!-- *--------------------------------------------------------- -->
+    <fieldset>
+      <legend>bai tap 5</legend>
+      <pre>
+            Viết chương trình tính chu vi và diện tích hình chữ nhật.
+        </pre
+      >
+      <button onclick="bai_05()">bài 4</button>
+      <p id="result_05"></p>
+    </fieldset>
+
+    <!--* --------------------------------------------------------  -->
+    <fieldset>
+      <legend>bai tap 6</legend>
+      <pre>
+            Viết chương trình tính chu vi và diện tích hình chữ nhật.
+        </pre
+      >
+      <button onclick="bai_05()">bài 6</button>
+      <p id="result_06"></p>
+    </fieldset>
+    <!-- *------------------------------------------------------------ -->
+    <fieldset>
+      <legend>bai tap 7</legend>
+      <pre>
+            Viết chương trình tính giá điện 
+        </pre
+      >
+      <table>
+        <tr>
+          <th>giá bán lẻ điện sinh hoạt</th>
+          <th>giá bán bán</th>
+        </tr>
+        <tr>
+          <td>bậc 1: cho kwh từ 0 - 50</td>
+          <td>1.728</td>
+        </tr>
+        <tr>
+          <td>Bậc 2: Cho kWh từ 51 - 100</td>
+          <td>1.786</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <button onclick="bai_06()">bài 7</button>
+      <p id="result_07"></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>bai tap 8</legend>
+      <pre>
+            tính giây đếm ngược
+        </pre
+      >
+      <button onclick="bai_07()">bài 8</button>
+      <p id="result_08"></p>
+
+      <button onclick="bai_07_1()">bài 8</button>
+      <p id="result_08_1"></p>
+    </fieldset>
+
+    <!-- *------------------------------------ -->
+    <fieldset>
+      <legend>bai tap 9</legend>
+      <pre>
+            tính năm nhuận
+        </pre
+      >
+      <button onclick="bai_08()">bài 9</button>
+      <p id="result_09"></p>
+    </fieldset>
+
+    <!-- *---------------tính tiền-------- -->
+    <fieldset>
+      <legend>bai tap 10</legend>
+      <label for="number"> nhập số</label>
+      <input type="number" id="number" name="number" />
+
+      <label for="change"> chọn đơn vị </label>
+      <select name="change" id="change">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+        <option value="ClEAR">clear</option>
+      </select>
+
+      <button onclick="bai_09()">đổi</button>
+
+      <p id="result_10"></p>
+      <p id="text"></p>
+    </fieldset>
+
+    <!-- * show giá trị cũng như text trên trang html  -->
+    <p id="elementID"></p>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
