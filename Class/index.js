@@ -72,3 +72,37 @@ function masshigherBMI() {
 }
 
 console.log(masshigherBMI());
+
+//assignment 03
+// What is a perfect number
+
+function isPerfectNumber(num) {
+  let sum = 0;
+
+  for (let i = 1; i < num; i++) {
+    if (num % i === 0) {
+      sum += i;
+    }
+  }
+
+  if (sum === num) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function find10perfectNumber() {
+  let count = 0;
+  while (count < 10) {
+    for (let number = 1; ; number++) {
+      const perfectNumber = isPerfectNumber(number);
+      if (perfectNumber) {
+        console.log(`${number} is a perfect number`);
+        count++;
+      }
+    }
+  }
+}
+
+find10perfectNumber();
