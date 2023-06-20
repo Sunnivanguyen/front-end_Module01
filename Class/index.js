@@ -1,8 +1,8 @@
 "use strict";
 // assignment 1
-let tips = [];
 
 function calcTip(bills) {
+  let tips = [];
   for (let i = 0; i < bills.length; i++) {
     if (bills[i] >= 50 && bills[i] <= 300) {
       tips.push(bills[i] * 0.15);
@@ -10,23 +10,22 @@ function calcTip(bills) {
       tips.push(bills[i] * 0.2);
     }
   }
-
   return tips;
 }
+
 let bills = [125, 555, 44];
 
-calcTip(bills);
+const tips = calcTip(bills);
 
-let total = [];
-
-function calcTotal() {
+function calcTotal(bills, tips) {
+  let total = [];
   for (let i = 0; i < bills.length || i < tips.length; i++) {
     total.push(bills[i] + tips[i]);
   }
   return total;
 }
 
-calcTotal();
+const total = calcTotal(bills, tips);
 
 console.log(`bill: ${bills}, tip: ${tips}, total: ${total}`);
 
