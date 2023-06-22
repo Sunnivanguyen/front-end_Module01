@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <fieldset>
+        <legend>Style Letters</legend>
+        <button onclick="assignment_01()" class="assignment-btn">
+          Assignment 01
+        </button>
+        <div id="input-field"></div>
+      </fieldset>
+      <!-- *-------------------------------------------------------- -->
+
+      <fieldset>
+        <legend>Dictionary</legend>
+        <button class="assignment-btn">Assignment 02</button>
+
+        <div>
+          <div id="dictionary-input_field">
+            <input type="text" placeholder="Dictionary" id="word-input" />
+            <button class="find-word-btn" onclick="assignment_02()">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div id="dictionary-output_field">
+            <h3 id="word-meaning">Word Meaning</h3>
+            <div>
+              <h4 id="ipa">IPA</h4>
+              <audio
+                controls
+                id="sound"
+                src="https://api.dictionaryapi.dev/media/pronunciations/en/hello-au.mp3"
+              >
+                <source type="audio/mp3" />
+              </audio>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <!-- *-------------------------------------------------------- -->
+
+      <fieldset>
+        <legend>Get Info and Render</legend>
+        <button onclick="assignment_03()" class="assignment-btn">
+          Assignment 03
+        </button>
+        <form action="" method="post" name="my-form">
+          <div id="info-input_field">
+            <input id="get-infor" type="text" name="somename" />
+            <button type="submit" name="submit" class="submit-btn">Add</button>
+          </div>
+        </form>
+      </fieldset>
+      <!-- *-------------------------------------------------------- -->
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
